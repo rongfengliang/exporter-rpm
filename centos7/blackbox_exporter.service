@@ -12,7 +12,6 @@ EnvironmentFile=-/etc/default/blackbox_exporter
 EnvironmentFile=-/etc/sysconfig/blackbox_exporter
 ExecStart=/usr/bin/blackbox_exporter 
 Restart=always
-WorkingDirectory=/
 
 [Install]
 WantedBy=multi-user.target
