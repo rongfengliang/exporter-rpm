@@ -12,7 +12,6 @@ EnvironmentFile=-/etc/default/node_exporter
 EnvironmentFile=-/etc/sysconfig/node_exporter
 ExecStart=/usr/bin/node_exporter 
 Restart=always
-WorkingDirectory=/
 
 [Install]
 WantedBy=multi-user.target
