@@ -31,6 +31,11 @@ fpm -s dir -t rpm -n blackbox_exporter --rpm-os linux -v v1.4-centos6 \
 centos7
 
 ```code
+
+fpm -s dir -t rpm -n node_exporter --rpm-os linux -v v1.4-centos7 \
+  ./binary/node_exporter=/usr/bin/ \
+  ./centos7/node_exporter.service=/usr/lib/systemd/system/node_exporter
+
 fpm -s dir -t rpm -n blackbox_exporter --rpm-os linux -v v1.4-centos7 \
   ./binary/blackbox_exporter=/usr/bin/ \
   ./centos7/blackbox_exporter.service=/usr/lib/systemd/system/blackbox_exporter.service
