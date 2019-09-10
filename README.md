@@ -23,7 +23,7 @@ fpm -s dir -t rpm -n node-exporter --rpm-os linux -v v1.4-centos6 \
   ./centos6/node_exporter=/etc/init.d/node_exporter
 
 
-  fpm -s dir -t rpm -n blackbox_exporter --rpm-os linux -v v1.4-centos6 \
+fpm -s dir -t rpm -n blackbox_exporter --rpm-os linux -v v1.4-centos6 \
   ./binary/blackbox_exporter=/usr/bin/ \
   ./centos6/blackbox_exporter=/etc/init.d/blackbox_exporter
 ```
