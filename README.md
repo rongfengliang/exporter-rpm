@@ -6,6 +6,7 @@
 ## generate fpm for service
 
 * command
+
 ```code
 fpm -s pleaserun -t rpm -n black-exporter-service /usr/bin/blackbox_exporter
 fpm -s pleaserun -t rpm -n node-exporter-service /usr/bin/node_exporter
